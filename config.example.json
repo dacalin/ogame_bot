@@ -4,7 +4,7 @@
   "universe": "Gaspra",
   "language": "es",
   "planets": [{
-    "id" : 33621308,
+    "id" : 12345678,
     "probabilities": {
         "supplies": 50,
         "facilities": 10,
