@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  python:
+    build:
+      context: .
+      dockerfile: python.dockerfile
+    container_name: ogame
+    volumes:
+      - .:/var/www
+    working_dir: /var/www
+    entrypoint: ['python']

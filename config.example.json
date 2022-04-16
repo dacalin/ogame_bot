@@ -1,0 +1,34 @@
+{
+  "user": "email@email.com",
+  "password": "",
+  "universe": "Gaspra",
+  "language": "es",
+  "planets": [{
+    "id" : 33621308,
+    "probabilities": {
+        "supplies": 50,
+        "facilities": 10,
+        "research": 10,
+        "ships": 10,
+        "defences": 20
+    },
+    "supplies": {
+        "minimun": {
+          "metal": 50000,
+          "crystal": 50000,
+          "deuterium": 10000
+        },
+        "maximun": {
+          "metal": 100000,
+          "crystal": 100000,
+          "deuterium": 100000
+        },
+        "probabily": {
+                "metal_mine": 10, "crystal_mine": 10, "deuterium_mine": 10,
+                "solar_energy": 30, "fusion_energy": 30,
+                "metal_storage": 3.3, "crystal_storage": 3.3, "deuterium_storage": 3.3
+                }
+    }
+  }]
+
+}
