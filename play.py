@@ -39,13 +39,16 @@ def run():
                 print("Building...")
                 empire.build(what=action, id=planet_id)
 
-            time.sleep(random.randrange(10, 30)) #if not the session is closed (banned?)
+            print("\n", flush=True)
+
+            time.sleep(60) #if not the session is closed (banned?)
 
         # Wait
         delay = random.randrange(min_delay_minutes, max_delay_minutes)*60
         print("Waiting for " + str(int(delay/60)) + " minutes")
+        print("---------------------------\n", flush=True)
+
         time.sleep(delay)
-        print("---------------------------")
 
 if __name__ == "__main__":
     run()

@@ -10,3 +10,14 @@ services:
       - .:/var/www
     working_dir: /var/www
     entrypoint: ['python']
+
+  supervisor:
+    build:
+      context: .
+      dockerfile: supervisor.dockerfile
+    container_name: ogame-supervisor
+    restart: on-failure
+    volumes:
+      - .:/var/www
+      - ./etc/supervisor/jobs:/etc/supervisor/jobs
+
